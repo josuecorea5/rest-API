@@ -1,0 +1,141 @@
+body {
+    background: #ebf5fc
+}
+
+
+/*-------------PORTADA------------*/
+
+.sec {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1094d2;
+    /*#1c447c;*/
+    transition: 0.5s;
+}
+
+.content {
+    position: relative;
+    width: 990px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+    padding-left: 30px;
+}
+
+.content .textBox h2 {
+    color: #f1f2f4;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+    font-size: 2em;
+    color: #1094d2;
+}
+
+.content .textBox p {
+    color: #fff;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #0a94d4;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.img-portada {
+    position: absolute;
+}
+
+.img-portada:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background: rgba(28, 68, 124, 0.8);
+    text-align: left;
+}
+
+
+/* .circule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2f58aa;
+    clip-path: circle(600px at right 800px);
+} */
+
+.custom-shape-divider-bottom-1604948723 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1604948723 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1604948723 .shape-fill {
+    fill: #dae5ea;
+}
+
+@media (max-width: 991px) {
+    .sec {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .content {
+        justify-content: center;
+        width: 100%;
+    }
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+    .content .textBox h2 span {
+        color: #fff;
+    }
+    .img-portada {
+        position: relative;
+        height: 0%;
+        width: 0%;
+        overflow: hidden;
+    }
+    .circule {
+        clip-path: none;
+        background: none;
+        width: none;
+    }
+}
+
+
+/*-- FIN PORTADA --*/
